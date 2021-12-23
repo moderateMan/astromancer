@@ -13,16 +13,19 @@ const proConfig = {
 
 export default {
   ...(process.env.NODE_ENV === 'pro' ? proConfig : devConfig),
-  entry: './src/index.ts?matches=https://github.com/*?tab=stars&runAt=document_start',
+  entry: './src/index.ts?matches=https://github.com/*?*tab=stars*&runAt=document_start',
   module: {
     rules: [{
       test: /\.scss$/i,
-      use: ["style-loader", "css-loader", "sass-loader"],
+      use: ['style-loader', 'css-loader', 'sass-loader']
     }, {
       test: /\.tsx?/,
       use: 'ts-loader',
-      exclude: /node_modules/,
+      exclude: /node_modules/
     }]
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
   },
   plugins: [
     new Extender({ port: 18190 })

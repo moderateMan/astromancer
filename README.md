@@ -5,12 +5,21 @@
 
 <p align="center">
   <img src="https://shields.io/badge/TypeScript-Driver-green?logo=typescript" alt="lang">
-  <img src="https://shields.io/badge/version-0.1.1-green?logo=github" alt="version">
+  <img src="https://shields.io/badge/version-0.2.2-green?logo=github" alt="version">
 </p>
 
 ## **中文** / **[English](./README-en.md)**
 
 这是一个在谷歌浏览器上运行的插件，用于快速管理你在 github 上面的 star ，项目使用 webpack 和 TypeScript 开发。
+
+## 详细信息
+
+* 全新的界面用来管理你的 star repositories
+* starglasses 选项可以让你更快的找到你需要管理的 star repositories
+* 使用拖动操作来管理你的 star repositories
+* 支持俩种展示方式
+
+![demo](./001.gif)
 
 ## 如何使用
 
@@ -49,4 +58,5 @@
 ## 感谢
 
 * ~~我自己~~
+* 每一个 Star 了项目的用户
 * 项目图标来自[麻吉小猫](https://www.iconfont.cn/user/detail?uid=757066)
